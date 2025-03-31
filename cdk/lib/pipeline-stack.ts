@@ -21,8 +21,6 @@ export class PipelineStack extends cdk.Stack {
           `${props.githubOwner}/${props.githubRepo}`,
           props.branchName,
           {
-            // You'll need to store this secret in AWS Secrets Manager
-            // with the name 'github-token'
             authentication: cdk.SecretValue.secretsManager('github-token'),
           }
         ),
@@ -30,7 +28,7 @@ export class PipelineStack extends cdk.Stack {
           'cd cdk',
           'npm ci',
           'npm run build',
-          'npx cdk synth'
+          'cdk synth'
         ],
         primaryOutputDirectory: 'cdk/cdk.out'
       }),
