@@ -1,0 +1,12 @@
+---
+name: cdk-nag-best-practices.mdc
+description: Best practices for using CDK-Nag in AWS CDK projects
+globs: **/*.{ts,js}
+---
+
+- Use CDK-Nag to enforce security best practices in your CDK constructs
+- Implement custom rules to address project-specific security requirements
+- Regularly update CDK-Nag to benefit from the latest security checks
+- Use suppression judiciously and document the reasons for suppressing warnings
+- Integrate CDK-Nag into your CI/CD pipeline for automated security checks
+- Only validate against NIST 800-53 rev 5 ruleset

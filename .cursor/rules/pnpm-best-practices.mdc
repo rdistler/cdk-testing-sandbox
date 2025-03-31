@@ -1,0 +1,10 @@
+---
+name: pnpm-best-practices.mdc
+description: Best practices for using pnpm package manager
+globs: **/package.json
+---
+
+- Use `pnpm install --frozen-lockfile` to ensure consistent installs across environments
+- Leverage `pnpm workspaces` for monorepo management
+- Utilize `pnpm patch` for quick fixes to dependencies
+- Regularly run `pnpm audit` to check for security vulnerabilities

@@ -1,0 +1,12 @@
+---
+name: authjs-best-practices.mdc
+description: Best practices for authentication using Auth.js
+globs: **/*.{ts,tsx,js,jsx}
+---
+
+- Use the latest version of Auth.js for security and feature updates
+- Implement proper session management with secure cookies
+- Use environment variables for sensitive credentials
+- Implement proper error handling and logging for authentication flows
+- Use Auth.js built-in CSRF protection
+- Implement multi-factor authentication for enhanced security

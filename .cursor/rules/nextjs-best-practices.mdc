@@ -1,0 +1,11 @@
+---
+name: nextjs-best-practices.mdc
+description: Best practices for Next.js applications and routing
+globs: **/*.{ts,tsx}
+---
+
+- Do not use the pages router use the app router instead
+- Utilize the App Router for improved performance and simpler data fetching
+- Implement server-side rendering for better SEO and initial load times
+- Use `next/image` for optimized image loading and lazy loading
+- Leverage `next/font` for font optimization and better performance

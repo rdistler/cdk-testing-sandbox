@@ -1,0 +1,10 @@
+---
+name: typescript-best-practices.mdc
+description: TypeScript coding standards and type safety guidelines
+globs: **/*.{ts,tsx}
+---
+
+- Enable strict mode in your `tsconfig.json` for better type checking
+- Use union types instead of enums for better flexibility
+- Implement readonly properties for immutable data structures
+- Utilize mapped types and conditional types for advanced type manipulation

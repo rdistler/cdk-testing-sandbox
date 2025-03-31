@@ -1,0 +1,11 @@
+---
+name: commanderjs-best-practices.mdc
+description: Best practices for using Commander.js in CLI applications
+globs: **/*.{ts,js}
+---
+
+- Use consistent command naming conventions
+- Implement proper error handling for commands
+- Utilize action handlers for command logic
+- Use options and arguments effectively
+- Provide clear and concise help text for each command

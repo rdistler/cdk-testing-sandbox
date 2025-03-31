@@ -1,0 +1,10 @@
+---
+name: drizzle-orm-best-practices.mdc
+description: Best practices for using Drizzle ORM in your database operations
+globs: **/*.{ts,tsx}
+---
+
+- Use Drizzle's type-safe query builder for better code completion and error prevention
+- Implement migrations using Drizzle's migration tool for version control
+- Utilize Drizzle's relation system for defining and querying relationships
+- Optimize database queries using Drizzle's query optimization techniques

@@ -1,0 +1,31 @@
+---
+description: Directory structure to use for next.js and AWS CDK project
+globs: **/*.*
+alwaysApply: false
+---
+
+
+project-root/
+├── apps/
+│   └── web/                      # Next.js application
+│       ├── src/
+│       │   ├── app/             # App Router directory
+│       │   │   ├── (auth)/      # Route group for auth pages
+│       │   │   │   ├── login/
+│       │   │   │   │   ├── page.tsx
+│       │   │   │   │   └── loading.tsx
+│       │   │   │   └── register/
+│       │   │   ├── (dashboard)/ # Route group for dashboard
+│       │   │   ├── api/         # Route handlers
+│       │   │   ├── layout.tsx   # Root layout
+│       │   │   └── page.tsx     # Home page
+│       │   ├── components/      # React components
+│       │   │   ├── ui/          # Reusable UI components
+│       │   │   └── features/    # Feature-specific components
+│       │   ├── lib/            # Utility functions
+│       │   │   ├── actions/    # Server actions
+│       │   │   └── utils/      # Helper functions
+│       │   └── types/          # TypeScript types
+│       ├── public/             # Static assets
+│       └── tests/              # Test files
+├── infrastructure/             # CDK code (same a

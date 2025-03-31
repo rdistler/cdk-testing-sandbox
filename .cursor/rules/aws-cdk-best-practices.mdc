@@ -1,0 +1,18 @@
+---
+description: Best practices for infrastructure as code using AWS CDK
+globs: **/*.{ts,js}
+alwaysApply: false
+---
+
+- Always use the latest version of cdk
+- Always prefer using ContainerImage.fromAsset() over manually managing ECR repositories when possible
+- Use higher-level constructs like ApplicationLoadBalancedFargateService instead of creating individual resources
+- Use constructs to encapsulate reusable infrastructure components
+- Implement proper separation of concerns with stacks
+- Leverage CDK's built-in testing capabilities
+- Use environment-agnostic code with context lookups
+- Implement proper IAM role and policy management
+- Utilize CDK Pipelines for CI/CD integration
+- Utilize Typescript language
+- Follow test driven development practices when developing CDK solutions
+- Use stage constructs

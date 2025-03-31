@@ -1,0 +1,11 @@
+---
+name: tanstack-form-best-practices.mdc
+description: Best practices for using TanStack Form in your applications
+globs: **/*.{ts,tsx,js,jsx}
+---
+
+- Utilize the `useForm` hook for form state management and validation
+- Implement custom validation logic using the `validate` function
+- Leverage the `Field` component for easy form field integration
+- Use the `FormProvider` to share form context across components
+- Implement proper error handling and display using the `ErrorMessage` component

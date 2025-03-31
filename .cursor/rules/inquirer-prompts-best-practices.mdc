@@ -1,0 +1,11 @@
+---
+name: inquirer-prompts-best-practices.mdc
+description: Best practices for using @inquirer/prompts in CLI applications
+globs: **/*.{ts,js}
+---
+
+- Use async/await for handling prompts to improve readability
+- Validate user input with custom validation functions
+- Implement default values for common user inputs
+- Use the `when` condition to conditionally show prompts
+- Group related prompts together for better user experience

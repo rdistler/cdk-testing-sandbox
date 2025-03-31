@@ -1,0 +1,11 @@
+---
+name: aws-sdk-best-practices.mdc
+description: Best practices for using AWS SDK in your application
+globs: **/*.{ts,tsx,js,jsx}
+---
+
+- Use the modular imports to reduce bundle size (e.g., `import { S3Client } from "@aws-sdk/client-s3"` instead of `import * as AWS from 'aws-sdk'`)
+- Implement proper error handling and retries using the `retry` middleware
+- Use environment variables or a configuration service to manage AWS credentials
+- Leverage the AWS SDK v3's middleware stack for custom request/response processing
+- Implement proper pagination when dealing with AWS services that return large datasets
