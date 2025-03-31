@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as pipelines from 'aws-cdk-lib/pipelines';
 import { Construct } from 'constructs';
-import { NextjsStage } from './nextjs-stage';
+import { NextjsStage } from '../lib/nextjs-stage';
 
 export interface PipelineStackProps extends cdk.StackProps {
   githubOwner: string;
