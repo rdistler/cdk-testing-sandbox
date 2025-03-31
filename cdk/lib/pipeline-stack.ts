@@ -28,9 +28,12 @@ export class PipelineStack extends cdk.Stack {
           'cd cdk',
           'npm ci',
           'npm run build',
-          'npx cdk synth'
+          'npx cdk synth',
+          'mkdir -p cdk.out',
+          'mv cdk.out/* .',
+          'ls -la'
         ],
-        primaryOutputDirectory: 'cdk/cdk.out'
+        primaryOutputDirectory: 'cdk'
       }),
     });
 
