@@ -32,7 +32,7 @@ export class PipelineStack extends cdk.Stack {
         commands: [
           'ls -la',
           'pwd',
-          // 'cd cdk',
+          'cd cdk',
           'npm ci',
           'npm run build',
           'npx cdk synth',
